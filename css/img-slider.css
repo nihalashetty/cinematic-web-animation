@@ -1,0 +1,84 @@
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:2em;
+  position:absolute;
+  top:1em;
+  left:1em;
+  margin:0;
+  color:#75A2A2;
+}
+
+#tile-container{
+  -webkit-perspective: 500px; 
+  perspective: 1000px;
+}
+
+#tiles{
+  width:800px;
+  height:800px;
+  position:absolute;
+  left:40%;
+  top:-300px;
+  margin-left:-315px;
+  -webkit-transform: rotateZ(0deg);
+  transform: rotateX(65deg) rotateY(0deg) rotateZ(45deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.title{
+  width:250px;
+  height:250px;
+  float:left;
+  margin:0 10px 10px 0;
+}
+
+
+/* If you know any other trick to load images let me know? */
+.title-1::before {
+  background-image: url('../images/1.jpg') !important;
+}
+.title-2::before {
+  background-image: url('../images/2.jpg') !important;
+}
+.title-3::before {
+  background-image: url('../images/3.jpg') !important;
+}
+.title-4::before {
+  background-image: url('../images/4.jpg') !important;
+}
+.title-5::before {
+  background-image: url('../images/5.jpg') !important;
+}
+.title-6::before {
+  background-image: url('../images/6.jpg') !important;
+}
+.title-7::before {
+  background-image: url('../images/7.jpg') !important;
+}
+.title-8::before {
+  background-image: url('../images/8.jpg') !important;
+}
+.title-9::before {
+  background-image: url('../images/9.jpg') !important;
+}
+
+.title:before{
+  position:absolute;
+  content:'';
+  width:250px;
+  height:250px;
+  background:#75A2A2;
+  -webkit-transition: all 0.3s; 
+  transition: all 0.3s;
+}
+
+.title:hover:before{
+  background:#FFC600;
+  -webkit-transform: translate3d(0,0,40px);
+  transform: translate3d(0,0,40px) scale(1.5);
+  box-shadow:30px 30px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+
